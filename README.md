@@ -1,30 +1,31 @@
-## What websites:
+## What does Email ✉️ & Phone ☎️ Extractor do?
+This email and phone extractor allows you to scrape any website for contact information. That's right - any website 💪
 
-Anything. Just write an URL from which the crawler will begin to extract info, and click on links ("a" anchors).
+Just enter a URL, and the crawler will begin to extract info and click on links (“a” anchors). These are some of the types of information that this contact details crawler can extract:
 
-## What info:
-- Email
-- Phone numbers (from phone links or extracted from text)
-- LinkedIn
-- Twitter
-- Instagram
-- Facebook
+-   Email
+-   Phone numbers (from phone links or extracted from text)
+-   LinkedIn
+-   Twitter
+-   Instagram
+-   Facebook
 
-## Why:
-lead generation for your marketing and sales teams for instance
+## Why do I need this scraper?
+Email ✉️ & Phone ☎️ Extractor might be handy for your marketing and sales teams, whether you are just getting started with your company and looking to build up a database of potential clients or you are an established business and want to grow your network.
 
-## Tutorial:
-The Apify team did a [step-by-step guide](https://blog.apify.com/contact-information-scraper-7104cb0df25e/) to using Contact Details Scraper. Thanks to them.
+## How much will this scraper cost me?
+The Apify Free plan will give you 10,000 results, the Personal plan will give you 100,000 results, and the Team plan will deliver 1 million results!
 
-## Input Configuration
-- **Start URLs** - list of URLs where the crawler should start. 
-You can enter multiple URLs, upload a text file with URLs, or even use a Google Sheets document. 
-- **Maximum link depth** - how deep the actor will scrape links from the web pages specified in the Start URLs. If zero, the actor ignores the links and only crawls the Start URLs.
-- **Stay within domain** - If enabled, the actor will only follow links on the same startUrl domain. For example, while crawling "http://www.example.com/some-page", if the crawler finds a link to http://www.another-domain.com/, it will not follow this link.
-- **Pseudo URLs** - list of Regex the crawler will respect. Very useful when crawling a big website, to reduce the number of pages the crawler will follow.
+Check out [Apify pricing](https://apify.com/pricing) to see which plan is right for you.
 
-## Results
-The actor stores its results into the default dataset associated with the actor run. You can then download the results in formats such as JSON, HTML, CSV, XML, or Excel. For each page crawled, the following contact information is extracted (examples shown):
+## How to scrape contact details from any website
+If you want to read more about this scraper, its functionalities, and its setup, you can find a [step-by-step tutorial](https://blog.apify.com/contact-information-scraper-7104cb0df25e/).
+
+## Personal data and the legality of scraping contact information
+You should be aware that your results might contain personal data. Personal data is protected by GDPR in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers. You can also read this Apify blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/).
+
+## What will the results look like?
+This actor stores its results into the default dataset associated with the actor run. You can then download the results in formats such as JSON, HTML, CSV, XML, or Excel. For each page crawled, the following contact information is extracted (examples shown):
 
 - **Emails**
   ```
@@ -68,9 +69,3 @@ The actor stores its results into the default dataset associated with the actor 
   fb.com/apifytech
   https://www.facebook.com/profile.php?id=123456789
   ```
-
-## Personal data
-You should be aware that your results might contain personal data. Personal data is protected by GDPR in the European Union and by other regulations around the world. You should not scrape personal data unless you have a legitimate reason to do so. If you're unsure whether your reason is legitimate, consult your lawyers. You can also read Apify blog post on the [legality of web scraping](https://blog.apify.com/is-web-scraping-legal/).
-
-## Notes
-Thanks to Apify who created the original crawler
