@@ -13,7 +13,6 @@ Apify.main(async () => {
     const {
         startUrls,
         proxyConfig,
-        liveView,
         sameDomain,
         maxDepth,
         considerChildFrames,
@@ -61,9 +60,6 @@ Apify.main(async () => {
 
     // Puppeteer options
     const launchPuppeteerOptions = proxyConfig || {};
-    if (liveView) {
-        launchPuppeteerOptions.liveView = true;
-    }
     launchPuppeteerOptions.stealth = true;
     launchPuppeteerOptions.useChrome = true;
 
