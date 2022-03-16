@@ -17,6 +17,9 @@
             "default": {
                 "useApifyProxy": true
             },
+            "prefill": { 
+                "useApifyProxy": true 
+            },
             "editor": "proxy"
         },
         "maxDepth": {
@@ -44,12 +47,6 @@
             "type": "boolean",
             "description": "If set, the actor will only follow links within the same domain as the referring page.",
             "default": true
-        },
-        "liveView": {
-            "title": "Live view",
-            "type": "boolean",
-            "description": "If set, the actor will display a live view on the container URL, where you can monitor its progress. Note that the live view has a small performance overheads.",
-            "default": false
         },
         "pseudoUrls": {
             "title": "Pseudo urls",
